@@ -1,0 +1,116 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav {
+    justify-content: center;
+}
+
+.menu > ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    line-height: 40px;
+    border-bottom: 2px solid #e5e5e5;
+}
+
+.menu ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu ul .listmenu a:hover {
+    color: orangered;
+}
+
+.menu ul li:hover > .sub-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.listmenu {
+    float: left;
+    padding-right: 20px;
+}
+
+ul > .submenu {
+    display: none;
+}
+
+.sub-menu {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+    background: lightblue;
+}
+
+    .sub-menu li {
+        display: block;
+        font-size: 16px;
+    }
+
+        .sub-menu li a {
+            width: 150px;
+            padding: 0 20px;
+            display: block;
+        }
+
+            .sub-menu li a:hover {
+                background: #003399;
+            }
+
+.theNew {
+    display: flex;
+    padding: 20px;
+}
+
+    .theNew > div {
+        width: 1100px;
+        display: flex;
+        border-bottom: 2px solid #e5e5e5;
+        padding-bottom: 10px;
+    }
+
+.newTop {
+    display: flex;
+}
+
+    .newTop > div {
+        background: lightblue;
+        padding: 20px;
+    }
+
+    .newTop h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+.titleNew:hover {
+    color: orangered;
+}
+
+.newTop p {
+    padding-top: 20px;
+}
+
+.newBot {
+    display: flex;
+    padding-top: 15px;
+}
+
+    .newBot > div.text {
+        max-width: 240px;
+    }
+
+    .newBot > div.padding {
+        padding-left: 20px;
+    }
+
+    .newBot > div.text > p {
+        padding-top: 15px;
+    }
